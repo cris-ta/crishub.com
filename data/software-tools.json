@@ -1,0 +1,53 @@
+{
+  "tools": [
+    {
+      "title": "Visual Studio Code",
+      "description": "VSC is a go-to when it comes to web development.",
+      "url": "https://code.visualstudio.com/",
+      "image": "/assets/images/vsc.svg",
+      "category": "development"
+    },
+    {
+      "title": "Chrome",
+      "description": "Chrome is a browser that is used by most people.",
+      "url": "https://www.google.com/chrome/",
+      "image": "/assets/images/chrome.svg",
+      "category": "browser"
+    },
+    {
+      "title": "DBeaver",
+      "description": "DBeaver is a free SQL database management tool.",
+      "url": "https://dbeaver.io/",
+      "image": "/assets/images/dbeaver.svg",
+      "category": "development"
+    },
+    {
+      "title": "Postman",
+      "description": "Postman is a free API testing tool.",
+      "url": "https://www.getpostman.com/",
+      "image": "/assets/images/postman.svg",
+      "category": "development"
+    },
+    {
+      "title": "Figma",
+      "description": "My #1 design tool. I do all my UI design in Figma.",
+      "url": "https://figma.com/",
+      "image": "/assets/images/figma.svg",
+      "category": "design"
+    },
+    {
+      "title": "Notion",
+      "description": "I believe it’s the most popular note taking app right now.",
+      "url": "https://notion.so/",
+      "image": "/assets/images/notion.svg",
+      "category": "productivity"
+    },
+    {
+      "title": "Teams",
+      "description": "Teams is a Microsoft product that helps teams communicate and collaborate.",
+      "url": "https://teams.microsoft.com/",
+      "image": "/assets/images/teams.svg",
+      "category": "productivity"
+    }
+  ]
+}
