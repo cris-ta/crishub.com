@@ -6,7 +6,7 @@ export const fetchBookmarks = async (page: number = 0) => {
   const bookmarks: Bookmark[] = [];
 
   const req = await fetch(
-    `https://api.raindrop.io/rest/v1/raindrops/${process.env.RAINDROP_COLLECTION}?perpage=${PER_PAGE}&page=${page}`,
+    `https://api.raindrop.io/rest/v1/raindrops/${process.env.RAINDROP_COLLECTION_ID}?perpage=${PER_PAGE}&page=${page}`,
     {
       headers: {
         Authorization: `Bearer ${process.env.RAINDROP_TOKEN}`,

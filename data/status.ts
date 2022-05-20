@@ -1,5 +1,5 @@
 const status = {
-  emoji: '🤓',
+  emoji: '💡',
   text: 'Reading Developer Relations',
 };
 
