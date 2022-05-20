@@ -14,24 +14,24 @@ const App = ({ Component, pageProps }: AppProps) => {
   return (
     <ChakraProvider theme={theme}>
       <NextSeo
-        title="Cris Ta - Developer, designer, course creator."
-        description="Full-stack Engineer, UI Designer, and Open Source Advocate."
+        title="Crishub"
+        description="Full-stack Engineer and Open Source Advocate."
         twitter={{
           cardType: "summary_large_image",
           handle: "@cris-ta",
         }}
         openGraph={{
           url: "https://crishub.com",
-          title: "Cris Ta - Developer, designer, course creator.",
+          title: "Crishub",
           description:
-            "Full-stack Engineer, UI Designer, and Open Source Advocate.",
+            "Full-stack Engineer and Open Source Advocate.",
           locale: "en_US",
           images: [
             {
               url: "https://crishub.com/assets/images/social.png",
               width: 1200,
               height: 630,
-              alt: "Cris Ta",
+              alt: "Crishub",
               type: "image/png",
             },
           ],

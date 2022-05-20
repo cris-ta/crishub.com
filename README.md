@@ -10,9 +10,6 @@
 - **Styling**: [Chakra UI](https://chakra-ui.com/)
 - **Services**:
   - [Raindrop](https://raindrop.io/) for Bookmarks
-  - [ConvertKit](https://convertkit.com/) for Course Subscriptions
-  - [AirTable](https://airtable.com/) for Books
-  - [Plausible](https://plausible.io/) for Analytics
 
 ## Running Locally
 
@@ -24,4 +21,11 @@ $ yarn dev
 ```
 
 Create a `.env` file similar to [`.env.example`](https://github.com/cris-ta/crishub.com/blob/main/.env.example).
+
+## Migration
+
+```bash
+prisma migrate dev --name init
+```
+
 # crishub.com

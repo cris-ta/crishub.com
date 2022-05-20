@@ -28,7 +28,7 @@ const ColophonPage = () => {
           <Link href="https://planetscale.com/" isExternal>
             PlanetScale
           </Link>
-          , <Link href="http://airtable.com/">Airtable</Link>, and it’s deployed
+          , and it’s deployed
           on{" "}
           <Link href="https://vercel.com/" isExternal>
             Vercel
