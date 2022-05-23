@@ -16,10 +16,6 @@ const App = ({ Component, pageProps }: AppProps) => {
       <NextSeo
         title="Crishub"
         description="Full-stack Engineer and Open Source Advocate."
-        twitter={{
-          cardType: "summary_large_image",
-          handle: "@cris-ta",
-        }}
         openGraph={{
           url: "https://crishub.com",
           title: "Crishub",
@@ -28,7 +24,7 @@ const App = ({ Component, pageProps }: AppProps) => {
           locale: "en_US",
           images: [
             {
-              url: "https://crishub.com/assets/images/social.png",
+              url: "https://crishub.com/assets/images/favicon.png",
               width: 1200,
               height: 630,
               alt: "Crishub",
