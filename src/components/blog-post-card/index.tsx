@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from "next/link";
 import {
   LinkBox,
   LinkOverlay,
@@ -6,10 +6,11 @@ import {
   Text,
   VStack,
   HStack,
-} from '@chakra-ui/react';
-import { format } from 'timeago.js';
+} from "@chakra-ui/react";
+import { format } from "timeago.js";
 
-import { BlogPost } from '@/types/blog-post';
+import { BlogPost } from "@/types/blog-post";
+import BlogTags from "../blog-tags";
 
 const BlogPostCard = ({
   title,
@@ -17,6 +18,7 @@ const BlogPostCard = ({
   slug,
   date,
   readingTime,
+  tags = [],
 }: BlogPost) => {
   return (
     <LinkBox as="article">
@@ -25,12 +27,12 @@ const BlogPostCard = ({
         w="full"
         p={{ base: 0, md: 4 }}
         _hover={{
-          bg: 'gray.100',
-          transform: 'scale(1.025, 1.025)',
+          bg: "gray.100",
+          transform: "scale(1.025, 1.025)",
         }}
         _dark={{
           _hover: {
-            bg: 'gray.700',
+            bg: "gray.700",
           },
         }}
         rounded="md"
@@ -62,6 +64,7 @@ const BlogPostCard = ({
         <Text color="gray.500" fontSize="sm">
           {description}
         </Text>
+        {tags.length > 0 && <BlogTags tags={tags} />}
       </VStack>
     </LinkBox>
   );
