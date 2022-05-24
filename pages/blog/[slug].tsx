@@ -25,6 +25,7 @@ import LikeButton from "@/components/like-button";
 import usePostLikes from "src/hooks/use-post-likes";
 import imageMetadata from "@/utils/plugins/image-metadata";
 import ScrollToTopButton from "@/components/scroll-to-top-button";
+import BlogTags from "@/components/blog-tags";
 
 type Props = BlogPost & {
   source: MDXRemoteSerializeResult;
@@ -36,6 +37,7 @@ const BlogPostPage = ({
   date,
   source,
   readingTime,
+  tags = [],
 }: Props) => {
   const { query } = useRouter();
   const slug = query.slug as string;
@@ -96,6 +98,7 @@ const BlogPostPage = ({
           </HStack>
         </VStack>
         <MDXRemote {...source} components={MDXComponents} />
+        <BlogTags tags={tags} />
         <Divider />
         {!isLoading && (
           <HStack alignItems="center" justifyContent="center">
@@ -127,7 +130,7 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
   const postContent = await readBlogPost(slug);
   const {
     content,
-    data: { title, description, date },
+    data: { title, description, date, tags },
   } = matter(postContent);
 
   return {
@@ -142,6 +145,7 @@ export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
       description,
       date,
       slug,
+      tags,
     },
   };
 };

@@ -4,4 +4,5 @@ export type BlogPost = {
   date: string;
   slug: string;
   readingTime: string;
+  tags?: string[];
 };
